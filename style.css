@@ -1,0 +1,101 @@
+:root {
+    --primary-hsl: 200, 100%, 50%; /* Azul Vibrante[cite: 7] */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, hsl(250, 100%, 80%), hsl(200, 100%, 70%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.85); /* Fundo com RGBA[cite: 25] */
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    text-align: center; /* Centralizado[cite: 25] */
+    margin-bottom: 2rem;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    border: 3px solid hsl(var(--primary-hsl));
+}
+
+.name {
+    font-size: 1.8rem; /* Fonte grande[cite: 25] */
+    margin: 1rem 0 0.2rem;
+    color: #1a1a1a;
+}
+
+.role {
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 40%); /* Variação de cinza HSL[cite: 25] */
+    margin: 0;
+}
+
+.card-body {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    border-bottom: 1px dashed rgba(0,0,0,0.1);
+    padding-bottom: 0.5rem;
+}
+
+.info-row:last-child { margin-bottom: 0; border-bottom: none; padding-bottom: 0; }
+
+.label {
+    text-align: left; /* Alinhamento esquerdo[cite: 25] */
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.value {
+    text-align: right; /* Alinhamento direito[cite: 25] */
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: hsl(var(--primary-hsl)); /* Variação de cor base[cite: 25] */
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: hsl(200, 100%, 40%); /* Escurecendo o HSL no hover[cite: 25] */
+}
+
+.status {
+    text-align: center;
+    font-size: 0.75rem;
+    color: hsl(0, 0%, 50%);
+    margin-top: 1rem;
+}
